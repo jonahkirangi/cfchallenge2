@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruby Challenge Question #2</title>
+    
+    <!-- Add to list -->
+    <script type="text/javascript">
+        function listItem(){
+            var task = document.getElementById('task').value;
+            
+            var node=document.createElement("p");
+            var textnode=document.createTextNode(task);
+            node.appendChild(textnode);
+            document.getElementById('do').appendChild(node);    
+        }
+    </script>
+    
+    <!-- Remove from list -->
+    <script>
+        
+        
+        
+    </script>
+  </head>
+  <body>
+    <p id="do"> 
+    Add to my to-do list: <input type='text' id='task'>
+    <input type='button' onclick='listItem()' value='Submit'>
+    
+  </body>
+</html>
